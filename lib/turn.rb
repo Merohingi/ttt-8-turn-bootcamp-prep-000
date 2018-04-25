@@ -20,7 +20,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if index <= 9
+  if (index >= 0 && index <= 8)
     if position_taken?(board, index) == false
       return true
     else
